@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#0f172a"/>
+  <g opacity=".2">
+    <circle cx="980" cy="120" r="220" fill="url(#g)"/>
+    <circle cx="260" cy="500" r="180" fill="url(#g)"/>
+  </g>
+  <g fill="#e5e7eb" font-family="Cairo, Arial, sans-serif">
+    <text x="80" y="180" font-size="64" font-weight="800">أحمد نور أحمد عبد الحكيم</text>
+    <text x="80" y="250" font-size="36" opacity=".9">مطوّر برمجيات | أمن سيبراني | مصمّم مواقع</text>
+    <text x="80" y="320" font-size="28" opacity=".8">أدوات: SKULLPACH · GHOST · BARA · WiFiGost · GhostCracker · pipy</text>
+    <text x="80" y="390" font-size="24" opacity=".7">GitHub: github.com/ELSHAB7UAHED · TG: t.me/Ghosteryly</text>
+  </g>
+</svg>
+
