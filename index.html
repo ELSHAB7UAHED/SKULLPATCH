@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد نور أحمد عبد الحكيم - مطور ومتخصص أمن سيبراني</title>
+    <meta name="description" content="أحمد نور أحمد عبد الحكيم - مطور مواقع ومتخصص أمن سيبراني من مصر، 17 سنة، خبرة في تطوير أدوات اختبار الاختراق الأخلاقي">
+    <meta name="keywords" content="أحمد نور, مطور مواقع, أمن سيبراني, اختبار اختراق, برمجة, مصر">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader">
+            <div class="cyber-loader">
+                <div class="cyber-circle"></div>
+                <div class="cyber-circle"></div>
+                <div class="cyber-circle"></div>
+            </div>
+            <h2>جاري التحميل...</h2>
+        </div>
+    </div>
+
+    <!-- Fullscreen Toggle -->
+    <button id="fullscreen-toggle" class="fullscreen-btn" title="تبديل الشاشة الكاملة">
+        <i class="fas fa-expand"></i>
+    </button>
+
+    <!-- Theme Toggle -->
+    <button id="theme-toggle" class="theme-toggle" title="تبديل الوضع">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <!-- Language Toggle -->
+    <button id="lang-toggle" class="lang-toggle" title="تبديل اللغة">
+        <span>EN</span>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">أحمد نور</span>
+                <span class="logo-subtitle">Ahmed Nour</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active" data-en="Home" data-ar="الرئيسية">الرئيسية</a>
+                <a href="#about" class="nav-link" data-en="About" data-ar="نبذة">نبذة</a>
+                <a href="#skills" class="nav-link" data-en="Skills" data-ar="المهارات">المهارات</a>
+                <a href="#projects" class="nav-link" data-en="Projects" data-ar="المشاريع">المشاريع</a>
+                <a href="#timeline" class="nav-link" data-en="Timeline" data-ar="الرحلة">الرحلة</a>
+                <a href="#contact" class="nav-link" data-en="Contact" data-ar="اتصل بي">اتصل بي</a>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="cyber-grid"></div>
+            <div class="floating-particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-text" data-aos="fade-up" data-aos-duration="1000">
+                <h1 class="hero-title">
+                    <span class="greeting" data-en="Hello, I'm" data-ar="مرحباً، أنا">مرحباً، أنا</span>
+                    <span class="name">أحمد نور أحمد عبد الحكيم</span>
+                    <span class="name-en">Ahmed Nour Ahmed Abdel Hakeem</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </div>
+                <p class="hero-description" data-en="17-year-old cybersecurity specialist and penetration testing tools developer from Egypt. Started my programming journey at 14 and now proficient in 6+ programming languages." data-ar="متخصص أمن سيبراني ومطور أدوات اختبار الاختراق من مصر، 17 سنة. بدأت رحلتي في البرمجة في سن 14 والآن متقن لأكثر من 6 لغات برمجة.">
+                    متخصص أمن سيبراني ومطور أدوات اختبار الاختراق من مصر، 17 سنة. بدأت رحلتي في البرمجة في سن 14 والآن متقن لأكثر من 6 لغات برمجة.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-code"></i>
+                        <span data-en="View My Work" data-ar="اعرض أعمالي">اعرض أعمالي</span>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i>
+                        <span data-en="Get In Touch" data-ar="تواصل معي">تواصل معي</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <div class="image-container">
+                    <div class="cyber-frame">
+                        <div class="profile-image">
+                            <i class="fas fa-user-secret"></i>
+                        </div>
+                        <div class="scan-lines"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="About Me" data-ar="نبذة عني">نبذة عني</h2>
+                <p class="section-subtitle" data-en="Get to know more about my journey and passion" data-ar="تعرف أكثر على رحلتي وشغفي">تعرف أكثر على رحلتي وشغفي</p>
+            </div>
+            <div class="about-content">
+                <div class="about-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="info-card">
+                        <div class="card-header">
+                            <i class="fas fa-user-circle"></i>
+                            <h3 data-en="Personal Info" data-ar="المعلومات الشخصية">المعلومات الشخصية</h3>
+                        </div>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <span class="label" data-en="Full Name:" data-ar="الاسم الكامل:">الاسم الكامل:</span>
+                                <span class="value">أحمد نور أحمد عبد الحكيم</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-en="Age:" data-ar="العمر:">العمر:</span>
+                                <span class="value">17 <span data-en="years" data-ar="سنة">سنة</span></span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-en="Birth Date:" data-ar="تاريخ الميلاد:">تاريخ الميلاد:</span>
+                                <span class="value">11/2/2008</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-en="Location:" data-ar="الموقع:">الموقع:</span>
+                                <span class="value">مصر 🇪🇬</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-en="Education:" data-ar="التعليم:">التعليم:</span>
+                                <span class="value" data-en="3rd Year High School" data-ar="الصف الثالث الثانوي">الصف الثالث الثانوي</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-en="Programming Since:" data-ar="أبرمج منذ:">أبرمج منذ:</span>
+                                <span class="value" data-en="Age 14" data-ar="سن 14">سن 14</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-story" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="story-card">
+                        <div class="card-header">
+                            <i class="fas fa-rocket"></i>
+                            <h3 data-en="My Journey" data-ar="رحلتي">رحلتي</h3>
+                        </div>
+                        <div class="story-content">
+                            <p data-en="At just 17 years old, I've embarked on an incredible journey in the world of cybersecurity and web development. Born on February 11, 2008, in Egypt, I discovered my passion for programming and ethical hacking at the young age of 14." data-ar="في سن 17 عاماً فقط، بدأت رحلة مذهلة في عالم الأمن السيبراني وتطوير المواقع. وُلدت في 11 فبراير 2008 في مصر، واكتشفت شغفي بالبرمجة والقرصنة الأخلاقية في سن 14 عاماً.">
+                                في سن 17 عاماً فقط، بدأت رحلة مذهلة في عالم الأمن السيبراني وتطوير المواقع. وُلدت في 11 فبراير 2008 في مصر، واكتشفت شغفي بالبرمجة والقرصنة الأخلاقية في سن 14 عاماً.
+                            </p>
+                            <p data-en="Currently in my third year of high school, I've mastered over 6 programming languages and developed numerous cybersecurity tools. My expertise spans from web development to penetration testing, making me a versatile developer with a strong security mindset." data-ar="حالياً في الصف الثالث الثانوي، أتقنت أكثر من 6 لغات برمجة وطورت العديد من أدوات الأمن السيبراني. خبرتي تمتد من تطوير المواقع إلى اختبار الاختراق، مما يجعلني مطوراً متعدد المهارات بعقلية أمنية قوية.">
+                                حالياً في الصف الثالث الثانوي، أتقنت أكثر من 6 لغات برمجة وطورت العديد من أدوات الأمن السيبراني. خبرتي تمتد من تطوير المواقع إلى اختبار الاختراق، مما يجعلني مطوراً متعدد المهارات بعقلية أمنية قوية.
+                            </p>
+                            <p data-en="I've successfully designed and developed over 16 professional websites, demonstrating my ability to create stunning, functional web applications. My tools and projects are featured on ghost13.odoo.com, showcasing my commitment to ethical hacking and cybersecurity education." data-ar="نجحت في تصميم وتطوير أكثر من 16 موقعاً إلكترونياً احترافياً، مما يُظهر قدرتي على إنشاء تطبيقات ويب مذهلة وعملية. أدواتي ومشاريعي معروضة على ghost13.odoo.com، مما يُظهر التزامي بالقرصنة الأخلاقية وتعليم الأمن السيبراني.">
+                                نجحت في تصميم وتطوير أكثر من 16 موقعاً إلكترونياً احترافياً، مما يُظهر قدرتي على إنشاء تطبيقات ويب مذهلة وعملية. أدواتي ومشاريعي معروضة على ghost13.odoo.com، مما يُظهر التزامي بالقرصنة الأخلاقية وتعليم الأمن السيبراني.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="Technical Skills" data-ar="المهارات التقنية">المهارات التقنية</h2>
+                <p class="section-subtitle" data-en="Technologies and tools I work with" data-ar="التقنيات والأدوات التي أعمل بها">التقنيات والأدوات التي أعمل بها</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <div class="category-header">
+                        <i class="fas fa-code"></i>
+                        <h3 data-en="Programming Languages" data-ar="لغات البرمجة">لغات البرمجة</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="devicon-python-plain colored"></i>
+                            <span>Python</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-javascript-plain colored"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-html5-plain colored"></i>
+                            <span>HTML5</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-css3-plain colored"></i>
+                            <span>CSS3</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-php-plain colored"></i>
+                            <span>PHP</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-bash-plain colored"></i>
+                            <span>Bash</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <div class="category-header">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3 data-en="Cybersecurity" data-ar="الأمن السيبراني">الأمن السيبراني</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="fas fa-bug"></i>
+                            <span data-en="Penetration Testing" data-ar="اختبار الاختراق">اختبار الاختراق</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-wifi"></i>
+                            <span data-en="WiFi Security" data-ar="أمان الواي فاي">أمان الواي فاي</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-lock"></i>
+                            <span data-en="Ethical Hacking" data-ar="القرصنة الأخلاقية">القرصنة الأخلاقية</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-search"></i>
+                            <span data-en="Vulnerability Assessment" data-ar="تقييم الثغرات">تقييم الثغرات</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+                    <div class="category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3 data-en="Web Development" data-ar="تطوير المواقع">تطوير المواقع</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="devicon-react-original colored"></i>
+                            <span>React</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-nodejs-plain colored"></i>
+                            <span>Node.js</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-mysql-plain colored"></i>
+                            <span>MySQL</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-git-plain colored"></i>
+                            <span>Git</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="87"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                    <div class="category-header">
+                        <i class="fas fa-tools"></i>
+                        <h3 data-en="Tools & Frameworks" data-ar="الأدوات والإطارات">الأدوات والإطارات</h3>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <i class="devicon-linux-plain colored"></i>
+                            <span>Linux</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-terminal"></i>
+                            <span>Kali Linux</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="devicon-docker-plain colored"></i>
+                            <span>Docker</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fas fa-server"></i>
+                            <span>Metasploit</span>
+                            <div class="skill-level">
+                                <div class="skill-bar" data-level="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="My Projects" data-ar="مشاريعي">مشاريعي</h2>
+                <p class="section-subtitle" data-en="Cybersecurity tools and web applications I've developed" data-ar="أدوات الأمن السيبراني وتطبيقات الويب التي طورتها">أدوات الأمن السيبراني وتطبيقات الويب التي طورتها</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-skull"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge live" data-en="Live" data-ar="متاح">متاح</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">SKULLPACH</h3>
+                        <p class="project-description" data-en="Advanced penetration testing tool with comprehensive vulnerability scanning capabilities." data-ar="أداة اختبار اختراق متقدمة مع إمكانيات شاملة لفحص الثغرات الأمنية.">
+                            أداة اختبار اختراق متقدمة مع إمكانيات شاملة لفحص الثغرات الأمنية.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Security</span>
+                            <span class="tech-tag">Pentesting</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ghost13.odoo.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-en="View Live" data-ar="عرض مباشر">عرض مباشر</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-ghost"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge live" data-en="Live" data-ar="متاح">متاح</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GHOST</h3>
+                        <p class="project-description" data-en="Stealth network reconnaissance tool for ethical hacking and security assessment." data-ar="أداة استطلاع شبكة خفية للقرصنة الأخلاقية وتقييم الأمان.">
+                            أداة استطلاع شبكة خفية للقرصنة الأخلاقية وتقييم الأمان.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Network</span>
+                            <span class="tech-tag">Reconnaissance</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ghost13.odoo.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-en="View Live" data-ar="عرض مباشر">عرض مباشر</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge live" data-en="Live" data-ar="متاح">متاح</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">BARA</h3>
+                        <p class="project-description" data-en="Comprehensive security analysis tool for web application vulnerability detection." data-ar="أداة تحليل أمني شاملة لاكتشاف ثغرات تطبيقات الويب.">
+                            أداة تحليل أمني شاملة لاكتشاف ثغرات تطبيقات الويب.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Web Security</span>
+                            <span class="tech-tag">Analysis</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ghost13.odoo.com" target="_blank" class="project-link">
+                                <i class="fas fa-external-link-alt"></i>
+                                <span data-en="View Live" data-ar="عرض مباشر">عرض مباشر</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge development" data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">WiFiGost</h3>
+                        <p class="project-description" data-en="Advanced WiFi security testing tool for network penetration testing." data-ar="أداة اختبار أمان واي فاي متقدمة لاختبار اختراق الشبكات.">
+                            أداة اختبار أمان واي فاي متقدمة لاختبار اختراق الشبكات.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">WiFi</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link disabled">
+                                <i class="fas fa-clock"></i>
+                                <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge development" data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GhostCracker</h3>
+                        <p class="project-description" data-en="Password cracking and hash analysis tool for security professionals." data-ar="أداة كسر كلمات المرور وتحليل التشفير للمتخصصين الأمنيين.">
+                            أداة كسر كلمات المرور وتحليل التشفير للمتخصصين الأمنيين.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Cryptography</span>
+                            <span class="tech-tag">Security</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link disabled">
+                                <i class="fas fa-clock"></i>
+                                <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-header">
+                        <div class="project-icon">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="project-status">
+                            <span class="status-badge development" data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PIPY</h3>
+                        <p class="project-description" data-en="Python package management and automation tool for developers." data-ar="أداة إدارة حزم Python والأتمتة للمطورين.">
+                            أداة إدارة حزم Python والأتمتة للمطورين.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Package Management</span>
+                            <span class="tech-tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <span class="project-link disabled">
+                                <i class="fas fa-clock"></i>
+                                <span data-en="Coming Soon" data-ar="قريباً">قريباً</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="web-projects" data-aos="fade-up" data-aos-delay="700">
+                <div class="web-header">
+                    <h3 data-en="Web Development Portfolio" data-ar="محفظة تطوير المواقع">محفظة تطوير المواقع</h3>
+                    <p data-en="16+ professional websites designed and developed" data-ar="أكثر من 16 موقعاً إلكترونياً احترافياً تم تصميمه وتطويره">أكثر من 16 موقعاً إلكترونياً احترافياً تم تصميمه وتطويره</p>
+                </div>
+                <div class="web-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">16+</div>
+                        <div class="stat-label" data-en="Websites Created" data-ar="موقع تم إنشاؤه">موقع تم إنشاؤه</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3+</div>
+                        <div class="stat-label" data-en="Years Experience" data-ar="سنوات خبرة">سنوات خبرة</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">6+</div>
+                        <div class="stat-label" data-en="Security Tools" data-ar="أدوات أمنية">أدوات أمنية</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="My Journey" data-ar="رحلتي">رحلتي</h2>
+                <p class="section-subtitle" data-en="Key milestones in my development career" data-ar="المحطات الرئيسية في مسيرتي التطويرية">المحطات الرئيسية في مسيرتي التطويرية</p>
+            </div>
+            <div class="timeline-container">
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2008</div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h3 data-en="Born in Egypt" data-ar="الولادة في مصر">الولادة في مصر</h3>
+                            <p data-en="Born on February 11, 2008, in Egypt" data-ar="وُلدت في 11 فبراير 2008 في مصر">وُلدت في 11 فبراير 2008 في مصر</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="200">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022</div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 data-en="Programming Journey Begins" data-ar="بداية رحلة البرمجة">بداية رحلة البرمجة</h3>
+                            <p data-en="Started learning programming and cybersecurity at age 14" data-ar="بدأت تعلم البرمجة والأمن السيبراني في سن 14">بدأت تعلم البرمجة والأمن السيبراني في سن 14</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2023</div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3 data-en="First Security Tools" data-ar="أول أدوات أمنية">أول أدوات أمنية</h3>
+                            <p data-en="Developed first penetration testing tools: PIPY, SKULLPACH, GHOST" data-ar="طورت أول أدوات اختبار الاختراق: PIPY، SKULLPACH، GHOST">طورت أول أدوات اختبار الاختراق: PIPY، SKULLPACH، GHOST</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left" data-aos-delay="400">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024</div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <h3 data-en="Web Development Mastery" data-ar="إتقان تطوير المواقع">إتقان تطوير المواقع</h3>
+                            <p data-en="Created 16+ professional websites and expanded tool portfolio" data-ar="أنشأت أكثر من 16 موقعاً احترافياً ووسعت محفظة الأدوات">أنشأت أكثر من 16 موقعاً احترافياً ووسعت محفظة الأدوات</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right" data-aos-delay="500">
+                    <div class="timeline-content">
+                        <div class="timeline-year">2025</div>
+                        <div class="timeline-card">
+                            <div class="timeline-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <h3 data-en="Continued Innovation" data-ar="الابتكار المستمر">الابتكار المستمر</h3>
+                            <p data-en="Launching new tools: BARA, WiFiGost, GhostCracker and more projects" data-ar="إطلاق أدوات جديدة: BARA، WiFiGost، GhostCracker والمزيد من المشاريع">إطلاق أدوات جديدة: BARA، WiFiGost، GhostCracker والمزيد من المشاريع</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2 class="section-title" data-en="Get In Touch" data-ar="تواصل معي">تواصل معي</h2>
+                <p class="section-subtitle" data-en="Let's connect and collaborate on amazing projects" data-ar="دعنا نتواصل ونتعاون في مشاريع مذهلة">دعنا نتواصل ونتعاون في مشاريع مذهلة</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="contact-card">
+                        <div class="card-header">
+                            <i class="fas fa-address-card"></i>
+                            <h3 data-en="Contact Information" data-ar="معلومات الاتصال">معلومات الاتصال</h3>
+                        </div>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label" data-en="Email:" data-ar="البريد الإلكتروني:">البريد الإلكتروني:</span>
+                                    <a href="mailto:amedelshab7@gmail.com" class="value">amedelshab7@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label" data-en="Phone:" data-ar="الهاتف:">الهاتف:</span>
+                                    <a href="tel:+201014812328" class="value">01014812328</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">GitHub:</span>
+                                    <a href="https://github.com/ELSHAB7UAHED" target="_blank" class="value">ELSHAB7UAHED</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fab fa-telegram"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label">Telegram:</span>
+                                    <a href="https://t.me/Ghosteryly" target="_blank" class="value">Ghosteryly</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <span class="label" data-en="Website:" data-ar="الموقع:">الموقع:</span>
+                                    <a href="https://ghost13.odoo.com" target="_blank" class="value">ghost13.odoo.com</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                    <div class="contact-form-card">
+                        <div class="card-header">
+                            <i class="fas fa-paper-plane"></i>
+                            <h3 data-en="Send Message" data-ar="إرسال رسالة">إرسال رسالة</h3>
+                        </div>
+                        <form class="contact-form" id="contact-form">
+                            <div class="form-group">
+                                <label for="name" data-en="Your Name" data-ar="اسمك">اسمك</label>
+                                <input type="text" id="name" name="name" required>
+                                <i class="fas fa-user form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" data-en="Your Email" data-ar="بريدك الإلكتروني">بريدك الإلكتروني</label>
+                                <input type="email" id="email" name="email" required>
+                                <i class="fas fa-envelope form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" data-en="Subject" data-ar="الموضوع">الموضوع</label>
+                                <input type="text" id="subject" name="subject" required>
+                                <i class="fas fa-tag form-icon"></i>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" data-en="Your Message" data-ar="رسالتك">رسالتك</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                                <i class="fas fa-comment form-icon"></i>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <i class="fas fa-paper-plane"></i>
+                                <span data-en="Send Message" data-ar="إرسال الرسالة">إرسال الرسالة</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <div class="footer-logo">
+                        <h3>أحمد نور أحمد عبد الحكيم</h3>
+                        <p data-en="Cybersecurity Specialist & Web Developer" data-ar="متخصص أمن سيبراني ومطور مواقع">متخصص أمن سيبراني ومطور مواقع</p>
+                    </div>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4 data-en="Quick Links" data-ar="روابط سريعة">روابط سريعة</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home" data-en="Home" data-ar="الرئيسية">الرئيسية</a></li>
+                        <li><a href="#about" data-en="About" data-ar="نبذة">نبذة</a></li>
+                        <li><a href="#skills" data-en="Skills" data-ar="المهارات">المهارات</a></li>
+                        <li><a href="#projects" data-en="Projects" data-ar="المشاريع">المشاريع</a></li>
+                        <li><a href="#contact" data-en="Contact" data-ar="اتصل بي">اتصل بي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4 data-en="Follow Me" data-ar="تابعني">تابعني</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/ELSHAB7UAHED" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://t.me/Ghosteryly" target="_blank" class="social-link">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a href="mailto:amedelshab7@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://ghost13.odoo.com" target="_blank" class="social-link">
+                            <i class="fas fa-globe"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="400">
+                    <h4 data-en="Latest Tools" data-ar="أحدث الأدوات">أحدث الأدوات</h4>
+                    <ul class="footer-tools">
+                        <li><a href="https://ghost13.odoo.com" target="_blank">SKULLPACH</a></li>
+                        <li><a href="https://ghost13.odoo.com" target="_blank">GHOST</a></li>
+                        <li><a href="https://ghost13.odoo.com" target="_blank">BARA</a></li>
+                        <li><span data-en="WiFiGost (Coming Soon)" data-ar="WiFiGost (قريباً)">WiFiGost (قريباً)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-divider"></div>
+                <div class="footer-copyright">
+                    <p>&copy; 2025 <span data-en="Ahmed Nour Ahmed Abdel Hakeem. All rights reserved." data-ar="أحمد نور أحمد عبد الحكيم. جميع الحقوق محفوظة.">أحمد نور أحمد عبد الحكيم. جميع الحقوق محفوظة.</span></p>
+                    <p class="made-with-love">
+                        <span data-en="Made with" data-ar="صُنع بـ">صُنع بـ</span> 
+                        <i class="fas fa-heart pulse"></i> 
+                        <span data-en="and lots of code" data-ar="والكثير من الكود">والكثير من الكود</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" title="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Cursor Trail -->
+    <div class="cursor-trail"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
