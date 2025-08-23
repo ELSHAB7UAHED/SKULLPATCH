@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mo7aoil - موقع احترافي لمعالجة الصور والملفات</title>
+    <meta name="description" content="موقع mo7aoil الاحترافي والعصري لمعالجة الصور والملفات بأحدث التقنيات">
+    <meta name="keywords" content="معالجة صور, ضغط ملفات, تحويل صيغ, علامة مائية, PDF">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-magic"></i>
+                <span>mo7aoil</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">الرئيسية</a></li>
+                <li><a href="#tools" class="nav-link">الأدوات</a></li>
+                <li><a href="#features" class="nav-link">المميزات</a></li>
+                <li><a href="#about" class="nav-link">حول</a></li>
+                <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">mo7aoil</span>
+                    <br>موقع احترافي وعصري
+                    <br>لمعالجة الصور والملفات
+                </h1>
+                <p class="hero-description">
+                    اكتشف قوة معالجة الملفات مع أحدث التقنيات وأكثرها تقدماً
+                    <br>أدوات احترافية لجميع احتياجاتك
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('tools')">
+                        <i class="fas fa-rocket"></i>
+                        ابدأ الآن
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('features')">
+                        <i class="fas fa-info-circle"></i>
+                        تعرف على المزيد
+                    </button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-cards">
+                    <div class="card card-1">
+                        <i class="fas fa-image"></i>
+                        <span>معالجة الصور</span>
+                    </div>
+                    <div class="card card-2">
+                        <i class="fas fa-file-pdf"></i>
+                        <span>PDF</span>
+                    </div>
+                    <div class="card card-3">
+                        <i class="fas fa-video"></i>
+                        <span>الفيديو</span>
+                    </div>
+                    <div class="card card-4">
+                        <i class="fas fa-compress-arrows-alt"></i>
+                        <span>ضغط</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-waves">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path fill="#ffffff" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Tools Section -->
+    <section id="tools" class="tools">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">أدوات قوية ومتطورة</h2>
+                <p class="section-description">مجموعة شاملة من الأدوات الاحترافية لمعالجة جميع أنواع الملفات</p>
+            </div>
+            
+            <div class="tools-grid">
+                <!-- Image Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-image"></i>
+                        أدوات الصور
+                    </h3>
+                    <div class="tools-list">
+                        <div class="tool-item" data-tool="compress">
+                            <div class="tool-icon">
+                                <i class="fas fa-compress-arrows-alt"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>ضغط الصور</h4>
+                                <p>تقليل حجم الصور مع الحفاظ على الجودة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="resize">
+                            <div class="tool-icon">
+                                <i class="fas fa-expand-arrows-alt"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>تغيير الحجم</h4>
+                                <p>تغيير أبعاد الصور حسب احتياجاتك</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="convert">
+                            <div class="tool-icon">
+                                <i class="fas fa-exchange-alt"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>تحويل الصيغ</h4>
+                                <p>تحويل الصور بين مختلف الصيغ المدعومة</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="watermark">
+                            <div class="tool-icon">
+                                <i class="fas fa-stamp"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>إضافة علامة مائية</h4>
+                                <p>حماية صورك بإضافة علامات مائية احترافية</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PDF Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-file-pdf"></i>
+                        أدوات PDF
+                    </h3>
+                    <div class="tools-list">
+                        <div class="tool-item" data-tool="merge-pdf">
+                            <div class="tool-icon">
+                                <i class="fas fa-object-group"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>دمج PDF</h4>
+                                <p>دمج عدة ملفات PDF في ملف واحد</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="split-pdf">
+                            <div class="tool-icon">
+                                <i class="fas fa-cut"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>تقسيم PDF</h4>
+                                <p>تقسيم ملف PDF إلى عدة ملفات</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="pdf-to-image">
+                            <div class="tool-icon">
+                                <i class="fas fa-file-image"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>PDF إلى صورة</h4>
+                                <p>تحويل صفحات PDF إلى صور</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-video"></i>
+                        أدوات الفيديو
+                    </h3>
+                    <div class="tools-list">
+                        <div class="tool-item" data-tool="compress-video">
+                            <div class="tool-icon">
+                                <i class="fas fa-compress-video"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>ضغط الفيديو</h4>
+                                <p>تقليل حجم ملفات الفيديو</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="convert-video">
+                            <div class="tool-icon">
+                                <i class="fas fa-film"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>تحويل الفيديو</h4>
+                                <p>تحويل الفيديو بين مختلف الصيغ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Advanced Tools -->
+                <div class="tool-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-cogs"></i>
+                        أدوات متقدمة
+                    </h3>
+                    <div class="tools-list">
+                        <div class="tool-item" data-tool="batch">
+                            <div class="tool-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>معالجة مجمعة</h4>
+                                <p>معالجة عدة ملفات في نفس الوقت</p>
+                            </div>
+                        </div>
+                        
+                        <div class="tool-item" data-tool="ocr">
+                            <div class="tool-icon">
+                                <i class="fas fa-font"></i>
+                            </div>
+                            <div class="tool-info">
+                                <h4>استخراج النصوص</h4>
+                                <p>استخراج النصوص من الصور</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tool Interface -->
+    <section id="tool-interface" class="tool-interface hidden">
+        <div class="container">
+            <div class="tool-header">
+                <button class="back-btn" onclick="showToolsSection()">
+                    <i class="fas fa-arrow-right"></i>
+                    العودة للأدوات
+                </button>
+                <h2 id="current-tool-title">أداة معالجة الصور</h2>
+            </div>
+            
+            <div class="tool-content">
+                <div class="upload-area" id="upload-area">
+                    <div class="upload-content">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <h3>اسحب وأفلت الملفات هنا</h3>
+                        <p>أو اضغط لاختيار الملفات</p>
+                        <input type="file" id="file-input" multiple accept="image/*,video/*,.pdf,.doc,.docx" hidden>
+                        <button class="btn btn-primary" onclick="document.getElementById('file-input').click()">
+                            اختيار الملفات
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="tool-options hidden" id="tool-options">
+                    <h3>خيارات المعالجة</h3>
+                    <div class="options-grid" id="options-grid">
+                        <!-- Options will be dynamically loaded here -->
+                    </div>
+                    <button class="btn btn-primary process-btn" onclick="processFiles()">
+                        <i class="fas fa-cog"></i>
+                        بدء المعالجة
+                    </button>
+                </div>
+                
+                <div class="results hidden" id="results">
+                    <h3>النتائج</h3>
+                    <div class="results-list" id="results-list">
+                        <!-- Results will be displayed here -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">مميزات فريدة ومتطورة</h2>
+                <p class="section-description">اكتشف ما يجعل mo7aoil مختلفاً عن باقي المواقع</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>سرعة فائقة</h3>
+                    <p>معالجة فورية للملفات باستخدام أحدث التقنيات</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>أمان عالي</h3>
+                    <p>حماية كاملة لملفاتك وخصوصيتك</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>تصميم متجاوب</h3>
+                    <p>يعمل بشكل مثالي على جميع الأجهزة</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>معالجة سحابية</h3>
+                    <p>لا حاجة لتحميل برامج إضافية</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>مجاني بالكامل</h3>
+                    <p>جميع الأدوات متاحة مجاناً</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>متاح 24/7</h3>
+                    <p>خدمة متواصلة على مدار الساعة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>حول mo7aoil</h2>
+                    <p>
+                        mo7aoil هو موقع احترافي وعصري تم تطويره بأحدث التقنيات لتقديم أفضل تجربة 
+                        لمعالجة الصور والملفات. نحن نؤمن بأن التكنولوجيا يجب أن تكون سهلة الاستخدام 
+                        ومتاحة للجميع.
+                    </p>
+                    <p>
+                        مع أكثر من 20 أداة متطورة، نقدم حلول شاملة لجميع احتياجات معالجة الملفات 
+                        من الصور والفيديو إلى مستندات PDF والمزيد.
+                    </p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number">1M+</span>
+                            <span class="stat-label">ملف تمت معالجته</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">50K+</span>
+                            <span class="stat-label">مستخدم نشط</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">99.9%</span>
+                            <span class="stat-label">معدل الرضا</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">اتصل بنا</h2>
+                <p class="section-description">نحن هنا لمساعدتك في أي وقت</p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>البريد الإلكتروني</h4>
+                            <p>support@mo7aoil.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>الهاتف</h4>
+                            <p>+966 50 123 4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>العنوان</h4>
+                            <p>الرياض، المملكة العربية السعودية</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="الاسم الكامل" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="البريد الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="الموضوع" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="الرسالة" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-magic"></i>
+                        <span>mo7aoil</span>
+                    </div>
+                    <p>موقع احترافي وعصري لمعالجة الصور والملفات بأحدث التقنيات</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الأدوات</h4>
+                    <ul>
+                        <li><a href="#">معالجة الصور</a></li>
+                        <li><a href="#">أدوات PDF</a></li>
+                        <li><a href="#">معالجة الفيديو</a></li>
+                        <li><a href="#">أدوات متقدمة</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الدعم</h4>
+                    <ul>
+                        <li><a href="#">المساعدة</a></li>
+                        <li><a href="#">الدليل</a></li>
+                        <li><a href="#">الأسئلة الشائعة</a></li>
+                        <li><a href="#">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>الشركة</h4>
+                    <ul>
+                        <li><a href="#">حول</a></li>
+                        <li><a href="#">الخصوصية</a></li>
+                        <li><a href="#">الشروط</a></li>
+                        <li><a href="#">الوظائف</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 mo7aoil. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Loading Modal -->
+    <div class="loading-modal hidden" id="loading-modal">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h3>جاري المعالجة...</h3>
+            <p>يرجى الانتظار بينما نقوم بمعالجة ملفاتك</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
