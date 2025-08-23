@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  mo7aoil:
+    build: .
+    container_name: mo7aoil-app
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      - ./uploads:/app/uploads
+      - ./logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "healthcheck.js"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - mo7aoil-network
+
+  # Redis for caching (optional)
+  redis:
+    image: redis:7-alpine
+    container_name: mo7aoil-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - mo7aoil-network
+
+  # Nginx reverse proxy (optional)
+  nginx:
+    image: nginx:alpine
+    container_name: mo7aoil-nginx
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - mo7aoil
+    restart: unless-stopped
+    networks:
+      - mo7aoil-network
+
+volumes:
+  redis-data:
+
+networks:
+  mo7aoil-network:
+    driver: bridge
