@@ -1,0 +1,1 @@
+export type OutputFormat = 'png' | 'jpg' | 'jpeg' | 'webp' | 'avif';
